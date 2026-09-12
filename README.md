@@ -348,14 +348,6 @@ Use appropriate gain structure and audio-system protection.
 
 ## License
 
-A license has not yet been specified.
-
-Before distributing or accepting outside contributions, add a `LICENSE` file and update this section with the selected license.
-
-Common choices include:
-
-- MIT
-- Apache 2.0
 - GPLv3
 
 ---
