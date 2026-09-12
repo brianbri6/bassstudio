@@ -363,7 +363,7 @@ ReBassStudio is an independent Windows audio-processing project.
 Screenshots and demonstrations can be added here as the interface develops.
 
 ```markdown
-![ReBassStudio](rebassstudio.jpg)
+[![ReBassStudio](rebassstudio.jpg)](https://github.com/brianbri6/rebassstudio/blob/main/rebassstudio.jpg)
 ```
 
 ---
