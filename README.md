@@ -360,10 +360,8 @@ ReBassStudio is an independent Windows audio-processing project.
 
 ## Screenshots
 
-Screenshots and demonstrations can be added here as the interface develops.
 
-```markdown
-[![ReBassStudio](rebassstudio.jpg)](https://github.com/brianbri6/rebassstudio/blob/main/rebassstudio.jpg)
+![rebassstudio main](https://github.com/brianbri6/rebassstudio/blob/main/rebassstudio.jpg)
 ```
 
 ---
