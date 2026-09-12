@@ -1,6 +1,6 @@
-# ReBassStudio
+# BassStudio
 
-**ReBassStudio** is a Windows desktop application for rebassing music, previewing changes, and editing specific sections of a track without having to reprocess the entire song.
+**BassStudio** is a Windows desktop application for bassing music, previewing changes, and editing specific sections of a track without having to reprocess the entire song.
 
 The program is being developed in **C# with Visual Studio** and is intended to provide a simple graphical workflow for bass enhancement, frequency replacement, waveform-based editing, and final audio export.
 
@@ -18,7 +18,7 @@ The program is being developed in **C# with Visual Studio** and is intended to p
 - Replace or modify bass only where needed
 - Stitch the edited section back into the processed song
 - Preview audio before exporting
-- Adjustable rebass parameters
+- Adjustable bass parameters
 - Resizable interface panels / tiles
 - Windows-native desktop application
 - Visual Studio project structure
@@ -27,17 +27,17 @@ The program is being developed in **C# with Visual Studio** and is intended to p
 
 ## Waveform Section Editing
 
-One of the main goals of ReBassStudio is to make it easy to correct sections of a song where a single rebass configuration does not sound right.
+One of the main goals of BassStudio is to make it easy to correct sections of a song where a single bass configuration does not sound right.
 
 Instead of processing the entire track again, the workflow is designed around selecting part of the waveform:
 
 1. Load a song.
-2. Apply the main rebass settings.
+2. Apply the main bass settings.
 3. Highlight a section of the waveform.
 4. Adjust the bass settings for only that section.
 5. Preview the selected section.
 6. Apply the edit.
-7. ReBassStudio stitches the modified section back into the rest of the processed song.
+7. BassStudio stitches the modified section back into the rest of the processed song.
 8. Export the completed track as one continuous audio file.
 
 This makes it possible to use different bass frequencies or processing strengths throughout the same song.
@@ -46,12 +46,12 @@ This makes it possible to use different bass frequencies or processing strengths
 
 ## Typical Use Cases
 
-ReBassStudio can be useful when:
+BassStudio can be useful when:
 
 - One part of a song needs deeper bass than another
 - A bass note does not reproduce well on a particular subwoofer system
 - Different sections need different replacement frequencies
-- A rebassed track has a section that clips or becomes distorted
+- A bassed track has a section that clips or becomes distorted
 - You want to experiment with bass frequencies without modifying the entire song
 - You want to create a customized version of a track for a specific audio system
 
@@ -79,13 +79,13 @@ A normal Windows PC capable of decoding and processing the selected audio format
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ReBassStudio.git
+git clone https://github.com/YOUR-USERNAME/BassStudio.git
 ```
 
 2. Open the solution in Visual Studio.
 
 ```text
-ReBassStudio.sln
+BassStudio.sln
 ```
 
 3. Restore any required NuGet packages.
@@ -100,7 +100,7 @@ or the appropriate target architecture.
 
 5. Build the solution.
 
-6. Run `ReBassStudio.exe` from the build output directory.
+6. Run `BassStudio.exe` from the build output directory.
 
 ---
 
@@ -109,15 +109,15 @@ or the appropriate target architecture.
 A typical project layout is:
 
 ```text
-ReBassStudio/
+BassStudio/
 ├── src/
-│   └── ReBassStudio/
+│   └── BassStudio/
 │       ├── MainForm.cs
 │       ├── MainForm.Designer.cs
 │       ├── Program.cs
 │       └── ...
 ├── README.md
-└── ReBassStudio.sln
+└── BassStudio.sln
 ```
 
 The structure may change as the audio-processing engine and waveform editor continue to be developed.
@@ -169,7 +169,7 @@ Only the selected region needs to be reprocessed.
 After processing:
 
 ```text
-[ Original/Rebassed Audio ]
+[ Original/ed Audio ]
           +
 [ Modified Selected Region ]
           =
@@ -210,7 +210,7 @@ Features being considered or developed include:
 
 ## Audio Preview
 
-ReBassStudio uses Windows audio playback for preview functionality.
+BassStudio uses Windows audio playback for preview functionality.
 
 Some Windows playback APIs only accept uncompressed PCM WAV data. Audio formats such as MP3, AAC, FLAC, or compressed WAV formats may therefore need to be decoded to PCM before being sent to the preview engine.
 
@@ -222,7 +222,7 @@ The long-term goal is for preview playback to transparently handle the supported
 
 The preferred editing model is non-destructive.
 
-The original audio should remain unchanged while ReBassStudio keeps track of:
+The original audio should remain unchanged while BassStudio keeps track of:
 
 - Selection position
 - Selection length
@@ -242,7 +242,7 @@ This makes it possible to continue adjusting individual sections without permane
 ```text
 00:00 ─────────────────────────────────────────────── 04:12
 
-       Main rebass settings applied to entire track
+       Main bass settings applied to entire track
 
 01:14 ─────── 01:27
        Selected region
@@ -264,19 +264,19 @@ All processed regions are rendered into one continuous song.
 
 ## Development Goals
 
-The goal of ReBassStudio is to provide a workflow that is easier to use than manually cutting audio into multiple files, processing each piece separately, and joining them back together.
+The goal of BassStudio is to provide a workflow that is easier to use than manually cutting audio into multiple files, processing each piece separately, and joining them back together.
 
 The program should eventually allow a user to perform the entire workflow visually:
 
 ```text
-Load → ReBass → Highlight → Adjust → Preview → Apply → Export
+Load → Bass → Highlight → Adjust → Preview → Apply → Export
 ```
 
 ---
 
 ## Known Development Areas
 
-Because ReBassStudio is still under development, some parts of the application may change significantly.
+Because BassStudio is still under development, some parts of the application may change significantly.
 
 Current development areas include:
 
@@ -298,7 +298,7 @@ Contributions, testing, bug reports, and feature suggestions are welcome.
 When submitting an issue, include:
 
 - Windows version
-- ReBassStudio version or commit
+- BassStudio version or commit
 - Audio file format
 - Sample rate / bit depth if known
 - Steps to reproduce the problem
@@ -338,7 +338,7 @@ Error / Stack Trace:
 
 ## Disclaimer
 
-ReBassStudio is an experimental audio-processing project.
+BassStudio is an experimental audio-processing project.
 
 Always keep a copy of the original audio file. Processing parameters that add substantial low-frequency energy can cause clipping or place additional stress on amplifiers, speakers, and subwoofers.
 
@@ -354,14 +354,14 @@ Use appropriate gain structure and audio-system protection.
 
 ## Author
 
-ReBassStudio is an independent Windows audio-processing project.
+BassStudio is an independent Windows audio-processing project.
 
 ---
 
 ## Screenshots
 
 
-![rebassstudio main](https://github.com/brianbri6/rebassstudio/blob/main/rebassstudio.jpg)
+![bassstudio main](https://github.com/brianbri6/bassstudio/blob/main/bassstudio.jpg)
 ```
 
 ---
@@ -370,4 +370,4 @@ ReBassStudio is an independent Windows audio-processing project.
 
 The main development direction is:
 
-**Rebass an entire track, visually select any problem area, apply custom settings only to that area, and seamlessly integrate the edited section back into the finished song.**
+** an entire track, visually select any problem area, apply custom settings only to that area, and seamlessly integrate the edited section back into the finished song.**
